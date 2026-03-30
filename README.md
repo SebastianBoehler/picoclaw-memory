@@ -190,6 +190,10 @@ Contributions are welcome. Start with [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 For larger changes, open an issue or a draft PR first so the design direction stays aligned with the board-first scope.
 
+## Agent Skill
+
+This repo includes a repo-local Codex skill at [`skills/picoclaw-memory`](./skills/picoclaw-memory) so other agents can pick up the project shape, constraints, and verification workflow quickly.
+
 ## License
 
 MIT. See [LICENSE](./LICENSE).

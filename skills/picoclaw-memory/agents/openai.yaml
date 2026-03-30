@@ -1,0 +1,4 @@
+interface:
+  display_name: "PicoClaw Memory"
+  short_description: "Build and operate PicoClaw Memory"
+  default_prompt: "Use $picoclaw-memory to extend or integrate the board-first memory service."
