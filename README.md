@@ -1,5 +1,7 @@
 # PicoClaw Memory
 
+[![Build](https://github.com/SebastianBoehler/picoclaw-memory/actions/workflows/build.yml/badge.svg)](https://github.com/SebastianBoehler/picoclaw-memory/actions/workflows/build.yml)
+
 PicoClaw Memory is a board-first memory service inspired by Supermemory and designed for small ARM64 Linux machines.
 
 The project focuses on the core value of agent memory without dragging in a cloud-heavy stack:
@@ -183,6 +185,11 @@ Current verification performed on this repo:
 - `go build ./...`
 - `docker build -t picoclaw-memory .`
 - container smoke test for `healthz`, memory write, and recall
+
+GitHub Actions:
+
+- `.github/workflows/build.yml` runs on pushes to `main`, pull requests to `main`, manual dispatch, and version tags matching `v*`
+- the workflow builds the Go service, runs tests, and verifies a multi-arch Docker build for `linux/amd64` and `linux/arm64`
 
 ## Contributing
 
